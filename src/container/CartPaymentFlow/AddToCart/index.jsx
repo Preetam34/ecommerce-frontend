@@ -4,6 +4,7 @@ import {
   Card,
   CardContent,
   useMediaQuery,
+  CircularProgress,
 } from "@mui/material";
 import closeCrossIcon from "../../../assets/closeCrossIcon.svg";
 import { Col, Row } from "react-bootstrap";
@@ -261,7 +262,7 @@ const cartProducts = getAllProduct?.filter(product =>
                   </Typography>
                 </Box>
               </Box>
-            )) :
+            )) : cartProducts && cartProducts?.length === 0 ? (
             <Box className="d-flex justify-content-center pb-4">
               <Card
 
@@ -281,7 +282,16 @@ const cartProducts = getAllProduct?.filter(product =>
                   </Typography>
                 </CardContent>
               </Card>
-            </Box>
+            </Box>):<>   <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            height: "300px",
+          }}
+        >
+          <CircularProgress color="primary" />
+        </div></>
           }
         </Col>
         {addedData && Object.keys(addedData)?.length > 0 ? <Col

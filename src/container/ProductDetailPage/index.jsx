@@ -405,19 +405,16 @@ const ProductDetail = () => {
       .catch(() => {
         setIsLoading(false);
       });
-    setIsLoading(false);
   }, [pId, dispatch]);
 
   const formatSpecifications = (specifications) => {
-    if (!specifications) return ""; // Handle cases where specifications may be undefined or null
+    if (!specifications) return ""; 
 
-    // Split the specifications string by ", " and wrap each in <li> tags
     const formattedSpecs = specifications
       .split(", ")
       .map((spec) => `<li>${spec}</li>`)
       .join("");
 
-    // Wrap the list items in a <ul> tag
     return `<ul>${formattedSpecs}</ul>`;
   };
 
@@ -455,7 +452,7 @@ const ProductDetail = () => {
         >
           <CircularProgress color="primary" />
         </div>
-      ) : (
+      ) : productDetailedData && productDetailedData ? (
         <>
           <div
             className={`${classes.gridPadding} ${classes.root}`}
@@ -1202,7 +1199,7 @@ const ProductDetail = () => {
           </Grid>
           <SimilarProducts pId={pId} setIsLoading={setIsLoading} />
         </>
-      )}
+      ):<></>}
 
       <Footer />
     </>

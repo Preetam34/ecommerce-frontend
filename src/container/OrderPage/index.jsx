@@ -510,7 +510,7 @@ const OrderPage = () => {
                 </Card>
               </Box>
             ))
-          ) : (
+          ) : orderData && orderData?.length === 0 ? (
             <Box>
               <Card
                 sx={{
@@ -530,7 +530,16 @@ const OrderPage = () => {
                 </CardContent>
               </Card>
             </Box>
-          )}
+          ):<>   <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            height: "300px",
+          }}
+        >
+          <CircularProgress color="primary" />
+        </div></>}
         </Grid>
       </Grid>
       <Footer/>

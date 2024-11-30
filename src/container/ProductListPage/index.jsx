@@ -203,7 +203,6 @@ const ProductPage = () => {
                 />
               </Box>
             </Box>
-            {/* )} */}
           </Box>
 
           <Box
