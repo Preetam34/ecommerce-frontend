@@ -1,0 +1,37 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.datePickerStyle{
+    width: 215px;
+    border: 1px solid grey !important;
+    border-radius: 0.5rem;
+}
+
+.datePickerStyle:hover{
+    border: 1px solid grey !important;
+}
+
+.right-info-box{margin-left: 3.125rem }
+
+@media screen and (max-width: 768px) {
+  .right-info-box{margin-left: 0}
+}
+
+/* "& .MuiOutlinedInput-notchedOutline": {
+    border: "none",
+  },
+  "&:hover": {
+    
+    border: "1px solid grey",
+  }, */
+
+
+  .slick-prev:before, .slick-next:before{
+    color: #222 !important;
+  }
+  .slick-prev:before, .slick-next:before{
+    color: #222 !important;
+  }
