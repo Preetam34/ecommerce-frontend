@@ -40,3 +40,34 @@ This is the frontend of the e-commerce application, built using React and Materi
  ```bash
    npm start
  ```
+
+ ### Exiting User Info
+- User 1
+   ```bash
+   Email : preetamkumar3232@gmail.com
+
+   Password : Preetam@123
+    ```
+- User 2
+   ```bash
+   Email : test@gmail.com
+
+   Password : Test@123
+    ```
+
+ ### Deployment Server Info
+   ```bash
+    https://ecommerce-frontend-rho-six.vercel.app
+    ```
+ ### Product with low stock info 
+   ```bash
+    Chocolate Truffle Cake - 5
+    Red Velvet Cake - 3
+    Samsung Galaxy S23 - 5
+    Google Pixel 8 Pro - 3
+    OnePlus 11 5G - 4 
+    White Lily Bouquet - 4
+    Mixed Flowers Bouquet - 5
+
+    Note : You can check out of stock purchase on these products and can modify teh stock by mongoDB compass
+    ```
