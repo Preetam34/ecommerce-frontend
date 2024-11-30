@@ -1,7 +1,7 @@
 import axios from "axios";
 import { LOGIN } from "../Routes/Routes";
 const axiosInstance = axios.create({
-  baseURL: "http://localhost:5000/",
+  baseURL: "https://ecommerce-backend-po3p.onrender.com/",
   headers: {
     "Content-Type": "application/json",
   },

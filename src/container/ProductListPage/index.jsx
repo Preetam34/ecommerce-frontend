@@ -19,7 +19,7 @@ import CircularProgress from "@mui/material/CircularProgress";
 import { getProductByCategory } from "../../Redux/Slices/ProductPage/ProductsPageSlice";
 import { io } from "socket.io-client";
 
-const socket = io("http://localhost:5000"); // Replace with your server URL
+const socket = io("https://ecommerce-backend-po3p.onrender.com/");
 
 const useStyles = makeStyles((theme) => ({
   rightInfoBox: {

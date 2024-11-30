@@ -54,7 +54,7 @@ import { addToCartProductsFinal } from "../../Redux/Slices/AddToCart/AddToCartSl
 import { io } from "socket.io-client";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 
-const socket = io("http://localhost:5000");
+const socket = io("https://ecommerce-backend-po3p.onrender.com");
 
 const useStyles = makeStyles((theme) => ({
   root: {
