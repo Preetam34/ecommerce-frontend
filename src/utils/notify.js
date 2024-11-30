@@ -14,7 +14,6 @@ export const SuccessToaster = ({
       }, 4000);
     }
   }, [showToast, setShowToast]);
-
   return (
     <div className="custom_toaster custom_toaster_error_zindex">
       <ToastContainer position="top-end" className="p-3">
